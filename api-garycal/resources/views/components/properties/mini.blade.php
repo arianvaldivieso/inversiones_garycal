@@ -11,12 +11,12 @@
       <div class="overlay">
           <div class="info">
               <div class="tag price">{{$property->type}}</div>
-              <h3>{{$property->address}}</h3>
+              <h3 class="text-capitalize" style="text-transform: capitalize;">{{$property->address}}</h3>
               {{-- <figure>Golden Valley, MN 55427</figure> --}}
           </div>
           <ul class="additional-info">
               <li>
-                  <header>Area:</header>
+                  <header><meta charset="euc-jp">Area:</header>
                   <figure>{{$property->surface}}<sup>2</sup></figure>
               </li>
               <li>

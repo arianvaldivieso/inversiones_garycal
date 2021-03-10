@@ -9,7 +9,7 @@
     <section id="banner">
         <div class="block has-dark-background background-color-default-darker center text-banner">
           <div class="container">
-              <h1 class="no-bottom-margin no-border">Contacta a un agente de Invesiones Garycal <a href="https://wa.me/584163912651?text=Me gustaria tener informacion de sus servicios - Contacto desde la pagina web"><strong>Telefono:</strong> 0416-391-2651</a>!</h1>
+              <h1 class="no-bottom-margin no-border">Contacta a un agente de Invesiones Garycal <a href="https://wa.me/584121908340?text=Me gustaria tener informacion de sus servicios - Contacto desde la pagina web"><strong>Telefono:</strong> 0412-190-8340</a>!</h1>
           </div>
         </div>
     </section>
@@ -24,7 +24,7 @@
                       <aside class="description">
                           <header><h3>Quienes somos</h3></header>
                           <!-- <p>Somos una empresa capaz de crear soluciones modernas, funcionales y sostenibles, satisfaciendo todos los aspectos de la arquitectura e ingeniería de la manera más eficiente y práctica, proporcionando propuestas innovadoras y vanguardistas, manteniendo los mejores estándares de calidad en nuestros procesos constructivos de la mano a ofrecer las mejores opciones en el mercado inmobiliario con el mejor respaldo funcional y legal que certifiquen la "Garantía y Calidad" que se requiere. </p> -->
-                          <a href="properties-listing.html" class="link-arrow">Leer mas</a>
+                          <a href="{{url('quienes-somos')}}" class="link-arrow">Leer mas</a>
                       </aside>
                   </div><!-- /.feature-box -->
               </div><!-- /.col-md-4 -->
@@ -35,7 +35,7 @@
                           <header><h3>Mision y Vision.</h3></header>
                           <!-- <p>Mision: Desarrollar y ofrecer espacios de vida con garantía y calidad para las familias, en las diferentes y mejores ubicaciones del Estado Bolívar y el Estado Anzoátegui.</p>
                           <p>Vision: Ser una constructora e inmobiliaria líder, innovadora en sus obras y servicios brindando a sus clientes la mayor confiabilidad.</p> -->
-                          <a href="agents-listing.html" class="link-arrow">Leer mas</a>
+                          <a href="{{url('quienes-somos')}}" class="link-arrow">Leer mas</a>
                       </aside>
                   </div><!-- /.feature-box -->
               </div><!-- /.col-md-4 -->
@@ -51,7 +51,7 @@
                            <li>Transparencia en nuestra relación.</li>
                            <li>Respeto por la comunidad y el medio ambiente</li>
                           </p> -->
-                          <a href="#" class="link-arrow">Leer mas</a>
+                          <a href="{{url('properties')}}" class="link-arrow">Leer mas</a>
                       </aside>
                   </div><!-- /.feature-box -->
               </div><!-- /.col-md-4 -->
@@ -88,7 +88,7 @@
                                 <div class="col-md-12 col-sm-12">
                                     <section id="address">
 
-                                        <a style="text-decoration: none;" href="https://wa.me/584163912651?text=Me gustaria tener informacion de sus servicios - Contacto desde la pagina web" target="_blank"><strong>Telefono: </strong>0416-391-2651 </a>
+                                        <a style="text-decoration: none;" href="https://wa.me/584121908340?text=Me gustaria tener informacion de sus servicios - Contacto desde la pagina web" target="_blank"><strong>Telefono: </strong>0412-190-8340 </a>
                                         <br>
                                         <a href="#">Correo: inversionesgarycal@gmail.com</a><br>
                                     </section><!-- /#address -->

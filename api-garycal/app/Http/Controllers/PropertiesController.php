@@ -20,12 +20,10 @@ class PropertiesController extends Controller
     public function index()
     {
 
-        $for_delete = Property::where('address','')->get();
 
         Photo::whereIn('property_id',$for_delete->pluck('id')->all())->delete();
         FeatureProperty::whereIn('property_id',$for_delete->pluck('id')->all())->delete();
-        Property::where('address','')->delete();
-        $properties = Property::all();
+        $properties = Property::where('address','!=',null)->get();
 
         return view('admin/properties/index',[
             'properties' => $properties

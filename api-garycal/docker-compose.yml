@@ -1,0 +1,56 @@
+version: '2'
+
+services:
+  sql:
+    tty: true
+    image: 'docker.io/bitnami/mariadb:10.2-debian-10'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_USER=my_user
+      - MARIADB_DATABASE=my_database
+      - MARIADB_PASSWORD=my_password
+  app:
+    tty: true
+    image: docker.io/bitnami/laravel:8
+    environment:
+      DB_HOST: sql
+      DB_USERNAME: my_user
+      DB_DATABASE: my_database
+      DB_PASSWORD: my_password
+      PORT: 3000
+    depends_on:
+      - sql
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
+    #  - ./php/php.ini:/opt/bitnami/php/lib/php.ini
+    # privileged: true # Privileged mode could be required to run this container under Windows
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: dev_pma
+    links:
+      - sql
+    depends_on:
+      - sql
+    environment:
+      PMA_HOST: sql
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+      VIRTUAL_HOST: "phpmyadmin.pilargolfdigital.ga"
+      LETSENCRYPT_HOST: "phpmyadmin.pilargolfdigital.ga"
+      LETSENCRYPT_EMAIL: "admin@pilargolfdigital.ga"
+    restart: always
+    ports:
+      - "3001:80"
+    networks:
+      - default
+
+
+
+
+volumes:
+  html:
+  certs:
+  vhost:
+  static:

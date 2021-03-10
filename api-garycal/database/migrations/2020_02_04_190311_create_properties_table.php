@@ -15,12 +15,12 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->longText('address');
-            $table->longText('description');
-            $table->longText('referral_point');
-            $table->string('type');
-            $table->string('status');
-            $table->float('price');
+            $table->longText('address')->nullable();
+            $table->longText('description')->nullable();
+            $table->longText('referral_point')->nullable();
+            $table->string('type')->nullable();
+            $table->string('status')->nullable();
+            $table->float('price')->nullable();
             $table->float('surface')->nullable();
             $table->float('baths')->nullable();
             $table->float('rooms')->nullable();
@@ -29,6 +29,8 @@ class CreatePropertiesTable extends Migration
             $table->string('longitude')->nullable();
             $table->boolean('principal')->default(0);
             $table->string('city')->default('Ciudad Bolívar');
+            $table->string('ml')->nullable();
+            $table->string('ml_id')->nullable();
             $table->timestamps();
         });
     }

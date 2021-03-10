@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="ThemeStarz">
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-    <link href="{{url('/')}}/assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{url('/')}}/assets/bootstrap/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="{{url('/')}}/assets/css/bootstrap-select.min.css" type="text/css">
-    <link rel="stylesheet" href="{{url('/')}}/assets/css/jquery.slider.min.css" type="text/css">
-    <link rel="stylesheet" href="{{url('/')}}/assets/css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="{{url('/')}}/assets/css/owl.transitions.css" type="text/css">
-    <link rel="stylesheet" href="{{url('/')}}/assets/css/style.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="{{url('')}}/assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{url('')}}/assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="{{url('')}}/assets/css/bootstrap-select.min.css" type="text/css">
+    <link rel="stylesheet" href="{{url('')}}/assets/css/jquery.slider.min.css" type="text/css">
+    <link rel="stylesheet" href="{{url('')}}/assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="{{url('')}}/assets/css/owl.transitions.css" type="text/css">
+    <link rel="stylesheet" href="{{url('')}}/assets/css/style.css" type="text/css">
 
     <title>Inversiones Garycal | Inicio</title>
 
@@ -26,7 +26,7 @@
             <div class="secondary-navigation">
               <div class="container">
                   <div class="user-area">
-                      <a href="https://wa.me/584163912651?text=Me gustaria tener informacion de sus servicios - Contacto desde la pagina web"><strong>Telefono:</strong> 0416-391-2651 </a>
+                      <a href="https://wa.me/584121908340?text=Me gustaria tener informacion de sus servicios - Contacto desde la pagina web"><strong>Telefono:</strong> 0412-190-8340 </a>
                       <a><strong>Email:</strong> inversionesgarycal@gmail.com </a>
                   </div>
                   <!-- <div class="user-area">
@@ -51,12 +51,12 @@
                           <span class="icon-bar"></span>
                       </button>
                       <div class="navbar-brand nav" id="brand">
-                          <a href="{{url('/')}}"><img src="{{url('/')}}/assets/img/logo.png" alt="brand"></a>
+                          <a href="{{url('/')}}"><img src="{{url('')}}/assets/img/logo.png" class="img-fluid" style="width:150px;" alt="brand"></a>
                       </div>
                   </div>
                   <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                       <ul class="nav navbar-nav">
-                          <li><a href="{{url('/')}}">Inicio</a></li>
+                          <li><a href="{{url('')}}">Inicio</a></li>
                           <li><a href="{{url('propiedades')}}">Propiedades</a></li>
                           <li><a href="{{url('quienes-somos')}}">Quienes Somos</a></li>
 
@@ -97,7 +97,7 @@
                                         Ciudad Bolívar<br>
                                         Venezuela
                                     </address>
-                                    <a style="text-decoration: none;" href="https://wa.me/584163912651?text=Me gustaria tener informacion de sus servicios - Contacto desde la pagina web" target="_blank">0416-391-2651 </a>!<br>
+                                    <a style="text-decoration: none;" href="https://wa.me/584121908340?text=Me gustaria tener informacion de sus servicios - Contacto desde la pagina web" target="_blank">0412-190-8340 </a>!<br>
                                     <a href="#">Inversionesgarycal@gmail.com</a>
                                 </article>
                             </div><!-- /.col-sm-3 -->
@@ -119,20 +119,20 @@
 
     <div id="overlay"></div>
 
-    <script type="text/javascript" src="{{url('/')}}/assets/js/jquery-2.1.0.min.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/assets/js/smoothscroll.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/assets/js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/assets/js/bootstrap-select.min.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/assets/js/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/assets/js/jquery.placeholder.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/assets/js/icheck.min.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/assets/js/jquery.vanillabox-0.1.5.min.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/assets/js/retina-1.1.0.min.js"></script>
-    <script type="text/javascript" src="{{url('/')}}/assets/js/custom.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/js/smoothscroll.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/js/icheck.min.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/js/jquery.vanillabox-0.1.5.min.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/js/retina-1.1.0.min.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/js/custom.js"></script>
     <!--[if gt IE 8]>
-    <script type="text/javascript" src="{{url('/')}}/assets/js/ie.js"></script>
+    <script type="text/javascript" src="{{url('')}}/assets/js/ie.js"></script>
     <![endif]-->
 
     <script>
@@ -140,6 +140,12 @@
             initializeOwl(false);
         });
     </script>
+
+    <script type="text/javascript" language="Javascript">
+
+      document.oncontextmenu = function(){return false}
+
+      </script>
 
     </body>
 </html>

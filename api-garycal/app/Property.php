@@ -16,12 +16,19 @@ class Property extends Model
         'status',
         'price',
         'latitude',
-        'longitude'
+        'longitude',
+        'ml'
     ];
 
     protected $with = [
         'feactures'
     ];
+    
+    public function getAddressAttribute($value)
+    {   
+        
+        return strtolower($value);
+    }
 
     static function types(){
         return [

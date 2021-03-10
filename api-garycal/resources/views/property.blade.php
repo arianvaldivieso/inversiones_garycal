@@ -19,7 +19,7 @@
 
             <section id="property-detail">
                 <header class="property-title">
-                    <h1>{{$property->address}}</h1>
+                    <h1 class="text-capitalize" style="text-transform: capitalize;">{{$property->address}}</h1>
                     <figure>{{$property->referral_point}}</figure>
                 </header>
                 <section id="property-gallery">
@@ -27,7 +27,7 @@
                         @foreach ($property->photos()->get() as $image)
                             @php
                                 $image = $image->route;
-                                $image = (strpos($image, 'properties') === false) ? 'https://www.inversionesgarycal.com.ve/imagenes/casas/'.$image : url('storage').'/'.$image ;
+                                $image = (strpos($image, 'properties') === false) ? $image : url('storage').'/'.$image ;
 
                             @endphp
                             <div class="property-slide">
@@ -71,11 +71,11 @@
                                 {{$property->description}}
                             </p>
                         </section><!-- /#description -->
-                        <section id="property-features">
+                        <section id="property-features" style="display:none;">
                             <header><h2>Caracteristicas</h2></header>
                             <ul class="list-unstyled property-features-list">
                                 @foreach ($property->feactures as $feacture)
-                                    <li>{{$feacture}}</li>
+                                    <li>{{$feacture->name}}</li>
                                 @endforeach
                             </ul>
                         </section><!-- /#property-features -->
@@ -95,7 +95,7 @@
                                                 </p>
                                                 <dl>
                                                     <dt>Telefono:</dt>
-                                                    <dd>0416-391-2651</dd>
+                                                    <dd>0412-190-8340</dd>
                                                     <dt>Email:</dt>
                                                     <dd><a href="mailto:#">inversionesgarycal@gmail.com</a></dd>
                                                 </dl>
@@ -140,7 +140,7 @@
                     @php
                         $url_encode = urlencode('Me gustaria tener informacion de la propiedad '.$property->id.' - '.$property->address.' - Contacto desde la pagina web')
                     @endphp
-                    <a href="https://wa.me/584163912651?text={{$url_encode}}" target="_blank" class="btn btn-default">Pedir información de este producto</a>
+                    <a href="https://wa.me/584121908340?text={{$url_encode}}" target="_blank" class="btn btn-default">Pedir información de este producto</a>
                 </div>
             </div>
         </div>

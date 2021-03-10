@@ -1,3 +1,6 @@
+#RewriteEngine On
+#RewriteRule / http://www.google.com [R]
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
@@ -13,9 +16,13 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
+    #RewriteRule ^(.*)$ https://inversionesgarycal.com.ve/$1 [L,R=301]
 
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+    
+    #RewriteRule     ^(.*)$ https://inversionesgarycal.com.ve [L,R]
+    #RewriteCond %{ENV:HTTPS} !on [NC]
 </IfModule>

@@ -65,5 +65,7 @@ Route::prefix('propiedades')->group(function(){
     Route::get('/{id}','ClientController@showProperty');
 });
 
+Route::get('syncronus','SyncronusController@syncronus');
+
 
 

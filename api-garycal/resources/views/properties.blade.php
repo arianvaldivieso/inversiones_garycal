@@ -13,7 +13,7 @@
         <!-- Results -->
         <div class="col-md-9 col-sm-12">
             <section id="results">
-                <header>
+                <header><meta charset="euc-jp">
                     <h1>Lista de propiedades</h1></header>
 
                 <section id="properties" class="display-lines">
@@ -21,7 +21,7 @@
                     @foreach ($properties as $index =>  $property)
                     @php
                         $image = collect($property->photos->where('principal',1)->all())->first()->route;
-                        $image = (strpos($image, 'properties') === false) ? 'https://www.inversionesgarycal.com.ve/imagenes/casas/'.$image : url('storage').'/'.$image ;
+                        $image = (strpos($image, 'properties') === false) ? $image : url('storage').'/'.$image ;
 
                     @endphp
                     <div class="property" style="margin-bottom: 30px;">
@@ -37,7 +37,7 @@
                         </div>
                         <div class="info">
                             <header>
-                                <a href="{{url('propiedades/'.$property->id)}}"><h3>{{$property->address}}</h3></a>
+                                <a href="{{url('propiedades/'.$property->id)}}"><h3 class="text-capitalize" style="text-transform: capitalize;">{{$property->address}}</h3></a>
                                 {{-- <figure>Worthington, OH 43085</figure> --}}
                             </header>
                             <div class="tag price">{{$property->type}}</div>
@@ -65,7 +65,7 @@
                                 <div class="banner">
                                     <div class="wrapper">
                                         <span class="title">Contacta a un agente de Invesiones Garycal</span>
-                                        <a class="submit" href="https://wa.me/584163912651?text=Me gustaria tener informacion de sus servicios - Contacto desde la pagina web">0416-391-2651 <i class="fa fa-plus-square"></i></a>
+                                        <a class="submit" href="https://wa.me/584121908340?text=Me gustaria tener informacion de sus servicios - Contacto desde la pagina web">0412-190-8340 <i class="fa fa-plus-square"></i></a>
                                     </div>
                                 </div><!-- /.banner-->
                             </a>

@@ -5,33 +5,40 @@ namespace App\Http\Controllers;
 use App\Property;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Notifications\Messages\data;
 // use Illuminate\Support\Carbon;
 
 class ClientController extends Controller
 {
     public function index(){
 
-        $sliders = Property::limit(4)->orderBy('created_at')->get();
+        $sliders = Property::limit(4)->orderBy('created_at','desc')->get();
 
         $sliders = $sliders->map(function($p,$i){
+            
+            $images = $p->photos->where('principal',1);
 
             return [
+                'property_id' => $p->id,
                 'address' => $p->address,
                 'type' => $p->type,
-                'image' => collect($p->photos->where('principal',1)->all())->first()
+                'image' => ($images->count()) ? $images->first() : (object) [
+                    'route' => ''    
+                ]
             ];
 
         })->all();
-
-        $last_properties = Property::limit(8)->orderBy('created_at')->get();
+        
+        $last_properties = Property::limit(8)->orderBy('created_at','desc')->get();
 
         $last_properties = $last_properties->map(function($p,$i){
 
-            $p->image = collect($p->photos->where('principal',1)->all())->first()->route;
+            $image = collect($p->photos->where('principal',1)->all())->first();
+            $p->image = (isset($image->route)) ? $image->route : '';
 
-            $aux = (strpos($p->image, 'properties') === false) ? 'https://www.inversionesgarycal.com.ve/imagenes/casas' : url('storage');
-
-            $p->image = $aux .'/'.$p->image;
+            if (strpos($p->image, 'properties') === true) {
+                $p->image = url('storage') .'/'.$p->image;
+            }
 
             return $p;
 
@@ -42,7 +49,7 @@ class ClientController extends Controller
 
     public function properties(){
 
-        $properties = Property::paginate(10);
+        $properties = Property::orderBy('created_at','desc')->paginate(10);
 
         return view('properties',compact('properties'));
     }
